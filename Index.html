@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Hello World</h1>
+
+<p id="msg">Main HTML seekh rahi hoon.</p>
+
+<img src="photo.png" width="200">
+
+<input type="text" id="nameBox" placeholder="Username">
+<br><br>
+<button onclick="showName()">Show Name</button>
+
+<p id="result"></p>
+
+<br><br>
+
+<button onclick="changeText()">click Me</button>
+<button>submit</button>
+
+<scripfunction login(){
+
+var u = document.getElementById("user").value;
+var p = document.getElementById("pass").value;
+
+if(u=="admin" && p=="1234"){
+    document.getElementById("loginResult").innerHTML="Login Success ✅";
+}
+else{
+    document.getElementById("loginResult").innerHTML="Wrong username/password ❌";
+}
+
+}
+function changeText(){
+    document.getElementById("msg").innerHTML =
+    "Ab main web developer ban rahi hoon 🙂";
+}
+
+function showName(){
+    var name = document.getElementById("nameBox").value;
+    document.getElementById("result").innerHTML =
+    "Hello " + name + " 🙂";
+}
+</script>
+
+</body>
+</html>
+
+<div class="card">
+
+<h2>Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+<br><br>
+
+<input type="password" id="pass" placeholder="Password">
+<br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="loginResult"></p>
+
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>About Page</h1>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+<p>Main web developer banna seekh rahi hoon 😄</p>
+
+</body>
+</html>
